@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="home_style.css">
+    <title>Data Science GT</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="container">
+                <div class="logo">Data Science</div>
+                <ul class="menu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about;" onclick="scrollToAbout()"">About</a></li>
+                    <li><a href="#projects;" onclick="scrollToProject()">Our Projects</a></li>
+                    <li><a heref="#workshop;" onclick="scrollToWorkshop()">Workshops</a></li>
+                    <li><a heref="#datatalk;" onclick="scrollToDataTalk()">Data Talks</a></li>
+                    
+                </ul>
+            </div>
+        </nav>
+        <div class="hero">
+            <div class="container">
+                <h1>Welcome to Data Science @ USF</h1>
+                <p>Your source for all things data science.</p>
+                <a class="cta-button" href="javascript:void(0);" onclick="scrollToAbout()">Learn More</a>
+            </div>
+        </div>
+    </header>
+   
+<section class="about" id="about">
+    <div class="container">
+        <div class="about-content">
+            <div class="about-text">
+                <h2>About Us</h2>
+                <p>
+                    Write your own story. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.
+                </p>
+                <p>
+                    Write your story. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since .
+                </p>
+                <p>
+                    write your stroy.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                </p>
+                <p class="meet-team-link"><a href="#meet-team-section">Meet Our Team</a></p>
+            </div>
+            <div class="about-image">
+                <img src="team.jpg" alt="About Us Image">
+            </div>
+        </div>
+    </div>
+    
+</section>
+
+
+
+<section class="who-we-are" id="who-we-are">
+    <div class="container">
+        <h2>Who We Are</h2>
+        <div class="description">
+            <p>We are a passionate and diverse community of students and professionals, dedicated to the field of data science. Our team is composed of:</p>
+        </div>
+        <div class="pie-chart">
+            <canvas id="studentsChart"></canvas>
+            <p>Undergraduate Students: 256</p>
+            <p>Graduate Students: 78</p>
+        </div>
+    </div>
+</section>
+
+<section class="workshop" id="workshop">
+    <div class="container">
+        <div class="workshop-content">
+            <div class="workshop-description">
+                <h3>Join Our Workshops</h3>
+                <p> Workshops are famous</p>
+                <a href="#" class="workshop-button">Learn More</a>
+            </div>
+            <img src="workshop.jpg" alt="BootCamp Image">
+        </div>
+    </div>
+</section>
+
+<section class="datatalks" id="datatalk">
+    <div class="container">
+        <h2>Data Talks</h2>
+        <div class="datatalks-content">
+            <div class="datatalks-slider">
+                <div class="slide">
+                    <img src="datatalks.jpg" alt="Data Talks Image 1">
+                    <p>These talks 1</p>
+                </div>
+                <div class="slide">
+                    <img src="workshop.jpg" alt="Data Talks Image 2">
+                    <p>These talks 2</p>
+                </div>
+                <div class="slide">
+                    <img src="team.jpg" alt="Data Talks Image 3">
+                    <p> These talks 3</p>
+                </div>
+            </div>
+            <div class="datatalks-description">
+                <h3>Data-Driven Talks</h3>
+                <p>Join our annual data-driven hackathon and showcase your data science skills. Solve real-world problems, collaborate with peers, and win exciting prizes.</p>
+                <a href="#" class="datatalks-button">Learn More</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+   
+<section class="projects" id="projects">
+    <div class="container">
+        <h2>Our Projects</h2>
+        <div class="project-cards">
+            <!-- Project Card 1 -->
+            <div class="project-card">
+                <img src="feed-a-bull.jpg" alt="Project 1">
+                <h3>Project Title 1</h3>
+                <p>Project description goes here. Briefly describe the project and its significance.</p>
+                <a href="our" class="learn-more-button">Learn More</a>
+            </div>
+            <!-- Project Card 2 -->
+            <div class="project-card">
+                <img src="feed-a-bull.jpg" alt="Project 2">
+                <h3>Project Title 2</h3>
+                <p>Project description goes here. Briefly describe the project and its significance.</p>
+                <a href="our" class="learn-more-button">Learn More</a>
+            </div>
+            <!-- Project Card 3 -->
+            <div class="project-card">
+                <img src="feed-a-bull.jpg" alt="Project 3">
+                <h3>Project Title 3</h3>
+                <p>Project description goes here. Briefly describe the project and its significance.</p>
+                <a href="our" class="learn-more-button">Learn More</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <section class="blog">
+        <div class="container">
+            <h2>Latest Blog Posts</h2>
+            <!-- Add blog post items here -->
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Data Science USF. All rights reserved.</p>
+        </div>
+    </footer>
+    <script>
+        function scrollToAbout() {
+            const aboutSection = document.getElementById('about');
+            if (aboutSection) {
+                aboutSection.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+        </script>
+    <script>
+        function scrollToProject() {
+            const projectSection = document.getElementById('projects');
+            if (projectSection) {
+                projectSection.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+        </script>
+        <script>
+            function scrollToWorkshop() {
+                const workshopSection = document.getElementById('workshop');
+                if (workshopSection) {
+                    workshopSection.scrollIntoView({ behavior: 'smooth' });
+                }
+            }
+            </script>
+        <script>
+            function scrollToDataTalk() {
+                const datatalkSection = document.getElementById('datatalk');
+                if (datatalkSection) {
+                    datatalkSection.scrollIntoView({ behavior: 'smooth' });
+                }
+            }
+            </script>
+        
+        
+    
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+    // Data for the single pie chart
+    var chartData = {
+        labels: ["Undergraduate Students", "Graduate Students"],
+        datasets: [{
+            data: [256, 78], // Adjusted values
+            backgroundColor: ["#007BFF", "#00A86B"], // Adjusted colors
+        }],
+    };
+
+    // Create the pie chart
+    var studentsChart = new Chart(document.getElementById("studentsChart"), {
+        type: "doughnut",
+        data: chartData,
+    });
+</script>
+
+
+<script>
+    let slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+        let i;
+        let slides = document.getElementsByClassName("slide");
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {
+            slideIndex = 1;
+        }
+        slides[slideIndex - 1].style.display = "block";
+        setTimeout(showSlides, 5000); // Change slides every 2 seconds (adjust as needed)
+    }
+</script>
+
+        
+        
+</body>
+</html>
